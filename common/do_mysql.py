@@ -8,7 +8,7 @@
 @Software : PyCharm
 """
 import pymysql
-from ALA_WeChat_1.common.config import conf
+from common.config import conf
 
 
 class DoMysql:

@@ -9,12 +9,12 @@
 """
 import unittest
 from ddt import ddt, data
-from ALA_WeChat_1.common import contants
-from ALA_WeChat_1.common import do_excel
-from ALA_WeChat_1.common import logger
-from ALA_WeChat_1.common.http_request import HttpRequest2
+from common import contants
+from common import do_excel
+from common import logger
+from common.http_request import HttpRequest2
 import json
-from ALA_WeChat_1.common.do_mysql import mysql
+from common.do_mysql import mysql
 # import jsonpath
 # import ast
 

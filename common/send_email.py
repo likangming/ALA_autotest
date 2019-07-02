@@ -11,8 +11,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-from ALA_WeChat_1.common.config import conf
-from ALA_WeChat_1.common.contants import report_dir
+from common.config import conf
+from common.contants import report_dir
 
 
 class Sendemail:

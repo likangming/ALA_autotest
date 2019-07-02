@@ -9,10 +9,10 @@
 """
 import unittest
 from ddt import ddt, data
-from ALA_WeChat_1.common.logger import logger
-from ALA_WeChat_1.common import do_excel
-from ALA_WeChat_1.common import contants
-from ALA_WeChat_1.common.http_request import HttpRequest2
+from common.logger import logger
+from common import do_excel
+from common import contants
+from common.http_request import HttpRequest2
 import json
 
 
