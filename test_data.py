@@ -7,7 +7,7 @@
 @File     : test_data.py
 @Software : PyCharm
 """
-from ALA_WeChat_1.common.http_request import HttpRequest
+from common.http_request import HttpRequest
 import json
 import jsonpath
 import time

@@ -4,8 +4,8 @@
 # Created time:2019/4/17 14:21
 # Filename:run.py
 import unittest
-from ALA_WeChat_1.common import HTMLTestRunnerNew
-from ALA_WeChat_1.common import contants
+from common import HTMLTestRunnerNew
+from common import contants
 import time
 
 discover = unittest.defaultTestLoader.discover(contants.case_dir, 'test_*.py')

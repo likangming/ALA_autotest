@@ -8,7 +8,7 @@
 @Software : PyCharm
 """
 import logging
-from ALA_WeChat_1.common import contants
+from common import contants
 
 
 def get_logger(name):

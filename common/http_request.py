@@ -5,8 +5,8 @@
 # Filename:http_request.py
 import requests
 import ast
-from ALA_WeChat_1.common.config import config
-from ALA_WeChat_1.common import logger
+from common.config import config
+from common import logger
 
 logger = logger.get_logger(__name__)
 
