@@ -7,6 +7,7 @@
 @File     : time_operate.py
 @Software : PyCharm
 """
+import time
 import datetime
 
 
@@ -19,3 +20,5 @@ def datetime_operate(n: int):
     new_date = _new_date.strftime("%Y%m%d")  # 转换为指定的输出格式
     # print(new_date)
     return new_date
+
+create_time = time.strftime('%Y%m%d_%H%M%S', time.localtime(time.time()))

@@ -12,6 +12,7 @@ from ddt import ddt, data
 from common import contants
 from common import do_excel
 from common import logger
+from common import context
 from common.http_request import HttpRequest2
 import json
 from common.do_mysql import mysql
@@ -34,6 +35,7 @@ class CreateTest(unittest.TestCase):
     @data(*cases)
     def test_create(self, case):
         logger.info('开始测试{}'.format(case.title))
+        case.data = context.replace(case.data)
         resp = self.http_request.http_request(case.method, case.url, case.data)
         # print('resp', resp)
         results = json.loads(resp.text)
