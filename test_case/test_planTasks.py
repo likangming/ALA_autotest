@@ -33,6 +33,7 @@ class PlanTasksTest(unittest.TestCase):
         logger.info('开始测试{}'.format(case.title))
         resp = self.http_request.http_request(case.method, case.url, case.data)
         results = json.loads(resp.text)
+        print('返回结果：', results)
         try:
             self.assertEqual(ast.literal_eval(case.expected), results["success"])
             self.excel.writer_result(case.case_id + 1, resp.text, "PASS")
