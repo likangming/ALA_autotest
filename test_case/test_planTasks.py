@@ -20,7 +20,7 @@ from common.http_request import HttpRequest2
 
 @ddt
 class PlanTasksTest(unittest.TestCase):
-    excel = do_excel.DoExcel(contants.case_file, 'planTasks')
+    excel = do_excel.DoExcel(contants.case_file, 'planTasks')  # 测试planTasks接口
     cases = excel.get_case()
 
     @classmethod
@@ -45,8 +45,8 @@ class PlanTasksTest(unittest.TestCase):
             textbookId = results["data"]["list"][0]['textbookId']
             logger.info("textbookId:{}".format(textbookId))
             print("textbookId:", textbookId)
-            setattr(Context, 'planId', str(planId))
-            setattr(Context, 'textbookId', str(textbookId))
+            setattr(Context, 'planId', str(planId))  # 将planId写入到类属性里
+            setattr(Context, 'textbookId', str(textbookId))  # 将textbookID写入到类属性里
         except ValueError as e:
             self.excel.writer_result(case.case_id + 1, resp.text, "FAIL")
             logger.error('报错了{}'.format(e))
