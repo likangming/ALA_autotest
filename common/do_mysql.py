@@ -43,15 +43,21 @@ class DoMysql:
 mysql = DoMysql()
 # if __name__ == '__main__':
 #     mysql = DoMysql()
-#     # result1 = mysql.fetch_all("select * from alading_test.al_en_plan where mac = 'F0:85:C1:D6:74:AF' ORDER BY plan_time DESC")
-#     # result1 = mysql.fetch_one("SELECT * FROM alading_jdcs.al_en_homework ORDER BY update_time DESC")
-#     result1 = mysql.fetch_one(
-#         "SELECT plan_id FROM alading_jdcs.al_en_plan WHERE homework_id = 'e5deaf1b727d4a8598798e2d3d5e144c';")
-#     print('result:', result1)
-#     print('type(result1):', type(result1))
-#     # planId = self.mysql.fetch_one(sql)[0]
-#     # print('planId:', planId)
-#     # planId = result1[0]
-#     # print('planId:', planId)
-#     # print('type(planId):', type(planId))
-#     mysql.close()
+    #     # result1 = mysql.fetch_all("select * from alading_test.al_en_plan where mac = 'F0:85:C1:D6:74:AF' ORDER BY plan_time DESC")
+    #     # result1 = mysql.fetch_one("SELECT * FROM alading_jdcs.al_en_homework ORDER BY update_time DESC")
+    #     result1 = mysql.fetch_one(
+    #         "SELECT plan_id FROM alading_jdcs.al_en_plan WHERE homework_id = 'e5deaf1b727d4a8598798e2d3d5e144c';")
+    #     print('result:', result1)
+    #     print('type(result1):', type(result1))
+    #     # planId = self.mysql.fetch_one(sql)[0]
+    #     # print('planId:', planId)
+    #     # planId = result1[0]
+    #     # print('planId:', planId)
+    #     # print('type(planId):', type(planId))
+
+    # homeworkid = '8ff223d17922476fa94599854ec9abf4'
+    # sql = f"SELECT complete FROM alading_jdcs.al_en_plan WHERE homework_id = '{homeworkid}';"
+    # complete = mysql.fetch_one(sql)['complete']
+    # print("complete:", complete)
+    # print('type(complete):', type(complete))
+    # mysql.close()
