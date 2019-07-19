@@ -51,7 +51,7 @@ class PlanTasksTest(unittest.TestCase):
                     print('homeworkId:', homeworkId)
                     # 保存到类属性里面
                     setattr(Context, "homeworkId", homeworkId)
-            except KeyError as e:
+            except KeyError:
                 pass
             # 判断添加到我的作业簿后，查询到planID并将planId保存到类属性中
             try:
@@ -60,11 +60,11 @@ class PlanTasksTest(unittest.TestCase):
                     homeworkid = getattr(Context, "homeworkId")
                     print('homeworkId:', homeworkid)
                     sql = f"SELECT plan_id FROM alading_jdcs.al_en_plan WHERE homework_id = '{homeworkid}';"
-                    planId = self.mysql.fetch_one(sql)['plan_id']   # 我设置的MySQL查询是以字典形式查询的，返回结果为字典
+                    planId = self.mysql.fetch_one(sql)['plan_id']  # 我设置的MySQL查询是以字典形式查询的，返回结果为字典
                     print('planId:', planId)
                     # 保存到类属性中去
                     setattr(Context, "planId", planId)
-            except KeyError as e:
+            except KeyError:
                 pass
         except ValueError as e:
             self.excel.writer_result(case.case_id + 1, resp.text, "FAIL")
@@ -75,4 +75,14 @@ class PlanTasksTest(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         logger.info('测试后置处理')
+        logger.info('暂停150S，等待小闹闹完成作业')
+        homeworkid = getattr(Context, "homeworkId")
+        print("homework:", homeworkid)
+        complete = 0
+        while complete == 0:
+            sql = f"SELECT complete FROM alading_jdcs.al_en_plan WHERE homework_id = '{homeworkid}';"
+            complete = cls.mysql.fetch_one(sql)['complete']
+            print("complete:", complete)
+            time.sleep(25)
+        # time.sleep(150)  # 作业需要100s才能完成
         cls.http_request.close()
