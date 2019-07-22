@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Alavening微信公众号接口测试20190702</title>
+    <title>Alavening微信公众号接口测试20190716</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -114,11 +114,11 @@ function html_escape(s) {
 }
 </script>
 <div class='heading'>
-<h1 style="font-family: Microsoft YaHei">Alavening微信公众号接口测试20190702</h1>
+<h1 style="font-family: Microsoft YaHei">Alavening微信公众号接口测试20190716</h1>
 <p class='attribute'><strong>测试人员 : </strong> Kevin</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-07-02 17:56:29</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.809162</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 12，通过 12，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-16 16:14:52</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:02:32.802534</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 18，通过 18，通过率= 100.00%</p>
 
 <p class='description'>WeChat API Test</p>
 </div>
@@ -127,8 +127,8 @@ function html_escape(s) {
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 12 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 12 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 18 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 18 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -149,30 +149,92 @@ function html_escape(s) {
 </tr>
 
 <tr class='passClass warning'>
+    <td>test_add.PlanTasksTest</td>
+    <td class="text-center">2</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: 请求数据：{"title":"#title#", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:接口自动化测试20190716_161452
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:oSrIn5_dCu_9eFVZmQi4FVA6bAfQ
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"oSrIn5_dCu_9eFVZmQi4FVA6bAfQ", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:2019-07-21 23:59:59
+case.data: {"title":"接口自动化测试20190716_161452", "openId":"oSrIn5_dCu_9eFVZmQi4FVA6bAfQ", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"2019-07-21 23:59:59", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+返回结果： {'data': {'homeworkId': '74759afc495e4483a9d3a9bda542daa0'}, 'success': True}
+homeworkId: 74759afc495e4483a9d3a9bda542daa0
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_2</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in" align="left">
+    <pre>
+    
+pt1_2: 请求数据：{"homeworkId":"#homeworkId#","openId":"#user_openId#","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:74759afc495e4483a9d3a9bda542daa0
+请求数据：{"homeworkId":"74759afc495e4483a9d3a9bda542daa0","openId":"#user_openId#","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:oSrIn55nLMabEySTSHD98cSxwxQ0
+请求数据：{"homeworkId":"74759afc495e4483a9d3a9bda542daa0","openId":"oSrIn55nLMabEySTSHD98cSxwxQ0","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:9ed6b17c3a064ed98ef4f64abd3c98d2
+case.data: {"homeworkId":"74759afc495e4483a9d3a9bda542daa0","openId":"oSrIn55nLMabEySTSHD98cSxwxQ0","nickname":"Mr. Zero","userId":"9ed6b17c3a064ed98ef4f64abd3c98d2","sign":""}
+返回结果： {'success': True, 'message': '添加作业成功，请到阿拉的夜晚APP上学习吧!'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
     <td>test_bookList.BooklistTest</td>
     <td class="text-center">4</td>
     <td class="text-center">4</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',4)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
+<tr id='pt2_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_allbooklist_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_2' class='hiddenRow'>
+<tr id='pt2_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_allbooklist_2</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_3' class='hiddenRow'>
+<tr id='pt2_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_allbooklist_3</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_4' class='hiddenRow'>
+<tr id='pt2_4' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_allbooklist_4</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -183,10 +245,10 @@ function html_escape(s) {
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',1)" class="detail" id='c3'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
+<tr id='pt3_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_books_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -197,15 +259,15 @@ function html_escape(s) {
     <td class="text-center">2</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c3',2)" class="detail" id='c3'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',2)" class="detail" id='c4'>详细</a></td>
 </tr>
 
-<tr id='pt3_1' class='hiddenRow'>
+<tr id='pt4_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_chapter_list_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_2' class='hiddenRow'>
+<tr id='pt4_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_chapter_list_2</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -216,20 +278,20 @@ function html_escape(s) {
     <td class="text-center">3</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',3)" class="detail" id='c4'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',3)" class="detail" id='c5'>详细</a></td>
 </tr>
 
-<tr id='pt4_1' class='hiddenRow'>
+<tr id='pt5_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_chapter_module_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_2' class='hiddenRow'>
+<tr id='pt5_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_chapter_module_2</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_3' class='hiddenRow'>
+<tr id='pt5_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_chapter_module_3</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -240,12 +302,153 @@ function html_escape(s) {
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
 </tr>
 
-<tr id='pt5_1' class='hiddenRow'>
+<tr id='pt6_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_create_1</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt6_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt6_1'>通过</button>
+    <div id='div_pt6_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt6_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt6_1'>通过</button>
+    <div id='div_pt6_1' class="collapse in" align="left">
+    <pre>
+    
+pt6_1: 请求数据：{"title":"#title#", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:接口自动化测试20190716_161452
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:oSrIn5_dCu_9eFVZmQi4FVA6bAfQ
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"oSrIn5_dCu_9eFVZmQi4FVA6bAfQ", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:2019-07-21 23:59:59
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_planTasks.PlanTasksTest</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',1)" class="detail" id='c7'>详细</a></td>
+</tr>
+
+<tr id='pt7_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse in" align="left">
+    <pre>
+    
+pt7_1: 返回结果： {'data': {'pageInfo': {'total': 85, 'pageNo': 1, 'totalPage': 5, 'pageSize': 20}, 'list': [{'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'c49b362a3ee544d3b3d713897c9bbf9a', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_161452', 'updateTime': '2019-07-16 16:16:32.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'd73a3189983d4569be1aab89e2ef2288', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_160316', 'updateTime': '2019-07-16 16:04:56.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '0202e2b4f68142d2b888d107db64d420', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_155519', 'updateTime': '2019-07-16 15:56:59.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'a9448eea0474409cbe922a96e6a04b09', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_143954', 'updateTime': '2019-07-16 14:41:33.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '5e104a12f8704ca98ad7efb1a29983f6', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_143752', 'updateTime': '2019-07-16 14:39:31.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'e1a01d46026045f7923a65b1751eed42', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_142855', 'updateTime': '2019-07-16 14:30:34.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '6d82f4bb5cd3422e920b84105f928749', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_142237', 'updateTime': '2019-07-16 14:24:18.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '2cecdd7eae2742cba3ba7a4612f0fe5d', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_114553', 'updateTime': '2019-07-16 11:47:32.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '71e9739cc69440b4a31f340a0836f2f6', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_114423', 'updateTime': '2019-07-16 11:46:03.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '38a77067e5894a959d860cfdff05478f', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_114109', 'updateTime': '2019-07-16 11:42:49.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'f8050adb3a454721a1895a43dc0121d9', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_113925', 'updateTime': '2019-07-16 11:41:04.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '7211af64f97e47af818d3c49dd101ed7', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_113800', 'updateTime': '2019-07-16 11:39:40.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'a01511a033b443ae8cda89c1e42cfd67', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '7月16日接口测试1', 'updateTime': '2019-07-16 10:50:26.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '241d4de5c81c4ee385124baf0071abff', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_104149', 'updateTime': '2019-07-16 10:43:28.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '006e52857bb544559d112b727fc4144f', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190716_104008', 'updateTime': '2019-07-16 10:41:47.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '0ddc2dde205145c7b92d235eb4695399', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '7月15日接口测试2', 'updateTime': '2019-07-15 17:57:05.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': 'd237a853787a4f90b9eea22195aae0c4', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '接口自动化测试20190715_163254', 'updateTime': '2019-07-15 16:34:33.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '2ef9da63a010468f89d343046bf88950', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '7月12日接口测试3', 'updateTime': '2019-07-12 10:53:38.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '5c75021062cf4a8a93e84de4bc7294e4', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '7月12日接口测试2', 'updateTime': '2019-07-12 10:42:30.0'}, {'bookImg': 'https://jdwx.alavening.com/alading_file/enDeclaim/190318185208fxMH/6Byiban.jpg', 'complete': 0, 'content': 'Chapter 3 Getting advice\n', 'flag': 0, 'isHomework': 1, 'planId': '7cb3a88a73db4021b15fcef1e0cb86dc', 'state': 0, 'textbookId': '20190318154322789b82Chapter 3', 'title': '7月12日接口测试1', 'updateTime': '2019-07-12 10:21:32.0'}]}, 'success': True}
+planID: c49b362a3ee544d3b3d713897c9bbf9a
+textbookId: 20190318154322789b82Chapter 3
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_playPlan.PlanTasksTest</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',3)" class="detail" id='c8'>详细</a></td>
+</tr>
+
+<tr id='pt8_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt8_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt8_1'>通过</button>
+    <div id='div_pt8_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt8_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt8_1'>通过</button>
+    <div id='div_pt8_1' class="collapse in" align="left">
+    <pre>
+    
+pt8_1: 请求数据：{"title":"#title#", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:接口自动化测试20190716_161452
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"#teacher_openId#", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:oSrIn5_dCu_9eFVZmQi4FVA6bAfQ
+请求数据：{"title":"接口自动化测试20190716_161452", "openId":"oSrIn5_dCu_9eFVZmQi4FVA6bAfQ", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"#endTime#", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+V 的值:2019-07-21 23:59:59
+case.data: {"title":"接口自动化测试20190716_161452", "openId":"oSrIn5_dCu_9eFVZmQi4FVA6bAfQ", "nickname":"库里", "textbookId":"20190318154322789b82", "endTime":"2019-07-21 23:59:59", "remark":"发布测试作业", "sections":"1637538399","images":"", "sign":""}
+返回结果： {'data': {'homeworkId': 'ca493189f49a4fcb9695095f1567a641'}, 'success': True}
+homeworkId: ca493189f49a4fcb9695095f1567a641
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt8_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_2</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt8_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt8_2'>通过</button>
+    <div id='div_pt8_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt8_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt8_2'>通过</button>
+    <div id='div_pt8_2' class="collapse in" align="left">
+    <pre>
+    
+pt8_2: 请求数据：{"homeworkId":"#homeworkId#","openId":"#user_openId#","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:ca493189f49a4fcb9695095f1567a641
+请求数据：{"homeworkId":"ca493189f49a4fcb9695095f1567a641","openId":"#user_openId#","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:oSrIn55nLMabEySTSHD98cSxwxQ0
+请求数据：{"homeworkId":"ca493189f49a4fcb9695095f1567a641","openId":"oSrIn55nLMabEySTSHD98cSxwxQ0","nickname":"Mr. Zero","userId":"#userId#","sign":""}
+V 的值:9ed6b17c3a064ed98ef4f64abd3c98d2
+case.data: {"homeworkId":"ca493189f49a4fcb9695095f1567a641","openId":"oSrIn55nLMabEySTSHD98cSxwxQ0","nickname":"Mr. Zero","userId":"9ed6b17c3a064ed98ef4f64abd3c98d2","sign":""}
+返回结果： {'success': True, 'message': '添加作业成功，请到阿拉的夜晚APP上学习吧!'}
+homeworkId: ca493189f49a4fcb9695095f1567a641
+planId: dcb65e98b9644260baa9b43d82f7df83
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt8_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_plan_tasks_3</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt8_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt8_3'>通过</button>
+    <div id='div_pt8_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt8_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt8_3'>通过</button>
+    <div id='div_pt8_3' class="collapse in" align="left">
+    <pre>
+    
+pt8_3: 请求数据：{"userId":"#userId#","mac":"#mac#","textbookId":"20190318154322789b82","planId":"#planId#"}
+V 的值:9ed6b17c3a064ed98ef4f64abd3c98d2
+请求数据：{"userId":"9ed6b17c3a064ed98ef4f64abd3c98d2","mac":"#mac#","textbookId":"20190318154322789b82","planId":"#planId#"}
+V 的值:F0:85:C1:D2:27:25
+请求数据：{"userId":"9ed6b17c3a064ed98ef4f64abd3c98d2","mac":"F0:85:C1:D2:27:25","textbookId":"20190318154322789b82","planId":"#planId#"}
+V 的值:dcb65e98b9644260baa9b43d82f7df83
+case.data: {"userId":"9ed6b17c3a064ed98ef4f64abd3c98d2","mac":"F0:85:C1:D2:27:25","textbookId":"20190318154322789b82","planId":"dcb65e98b9644260baa9b43d82f7df83"}
+返回结果： {'success': True, 'message': '操作成功'}
+homeworkId: ca493189f49a4fcb9695095f1567a641
+planId: dcb65e98b9644260baa9b43d82f7df83
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr class='passClass warning'>
@@ -254,18 +457,18 @@ function html_escape(s) {
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c9',1)" class="detail" id='c9'>详细</a></td>
 </tr>
 
-<tr id='pt6_1' class='hiddenRow'>
+<tr id='pt9_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_books_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>12</td>
-    <td>12</td>
+    <td>18</td>
+    <td>18</td>
     <td>0</td>
     <td>0</td>
     <td>通过率：100.00%</td>
